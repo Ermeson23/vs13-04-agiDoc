@@ -1,8 +1,6 @@
 import logo from '../../assets/agidoclogo.png'
-import './header.css';
+import './Header.css';
 import NavBar from '../navBar/NavBar';
-
-
 
 export default function Header(){
     return(

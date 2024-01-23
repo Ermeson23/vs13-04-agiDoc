@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import './menuitem.css'
+
+import './MenuItem.css'
 
 interface MenuItemProps {
     children: React.ReactNode;
