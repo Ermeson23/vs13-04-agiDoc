@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import './menuitem.css'
 
 interface MenuItemProps {
     children: React.ReactNode;
@@ -8,7 +9,7 @@ interface MenuItemProps {
 export default function MenuItem({ children, to}: MenuItemProps) {
     return(
         <>
-       <Link to={to}>{ children }</Link>
+       <Link className='link-menu' to={to}>{ children }</Link>
         </>
     )
 }
