@@ -1,14 +1,14 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface MenuItemProps {
-    href: string;
-    text: string;
+    children: React.ReactNode;
+    to: string;
 }
 
-const MenuItem: React.FC<MenuItemProps> = ({ href, text }) => {
-    return (
-        <a href={href}>{ text }</a>
-    );
-};
-
-export default MenuItem;
+export default function MenuItem({ children, to}: MenuItemProps) {
+    return(
+        <>
+       <Link to={to}>{ children }</Link>
+        </>
+    )
+}
