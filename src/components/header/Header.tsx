@@ -8,8 +8,9 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Drawer from '@mui/material/Drawer';
 import logo from '../../assets/agidoclogo.webp';
+import { Link } from 'react-router-dom';
 
-interface HeaderProps {}
+interface HeaderProps { }
 
 const Header: React.FC<HeaderProps> = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -25,7 +26,9 @@ const Header: React.FC<HeaderProps> = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar className="custom-header" position='fixed'>
         <Toolbar className='header-container'>
-          <img src={logo} alt="logo da agidoc com relógio representando agilidade. a palavra agi está em cor azul e doc está em verde" className='logo-agidoc' />
+          <Link className='link-menu' to='/'>{
+            <img src={logo} alt="logo da agidoc com relógio representando agilidade. a palavra agi está em cor azul e doc está em verde" className='logo-agidoc' />}
+          </Link>
           <IconButton className='custom-icon'
             size="large"
             edge="start"
