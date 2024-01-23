@@ -1,10 +1,14 @@
 import './App.css'
+import Header from './components/header/Header'
+import AppRoutes from './components/routes/AppRoutes'
+
 
 function App() {
   return (
-    <>
-    <p>Hello, world!</p>
-    </>
+    <AppRoutes>
+    </AppRoutes>
+   
+   
   )
 }
 

@@ -1,0 +1,12 @@
+.custom-header{
+  background-color: var(--white-gray);
+  width: 100vw;
+  max-height: fit-content;
+  padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+.logo-agidoc{
+    height: 2.5rem;
+    width: 7rem;
+    margin: 0.5rem;
+}
