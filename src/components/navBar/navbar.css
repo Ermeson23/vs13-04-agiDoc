@@ -1,7 +1,9 @@
 .nav-sec{
     display: flex;
-    gap: 0.25rem;
+    flex-direction: column;
+    gap: 1rem;
     text-align: center ;
+    margin: 1rem;
    
 }
 MenuItem{
