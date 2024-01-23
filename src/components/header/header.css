@@ -1,0 +1,37 @@
+.custom-header{
+  background-color: var(--white-gray);
+  width: 100vw;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  display: flex;
+  justify-content: center;
+  
+}
+.header-container{
+  width: 80vw;
+  max-height: fit-content;
+  padding: 0.5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo-agidoc{
+    height: 3rem;
+    width: 10rem;
+    margin: 0.5rem;
+}
+.nav-container{
+    width: 15rem ;
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+@media (min-width: 1920px){
+  .logo-agidoc{
+    height: 5rem;
+    width: 20rem;
+  
+}
+}

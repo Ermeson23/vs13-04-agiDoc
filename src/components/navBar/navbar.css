@@ -1,0 +1,9 @@
+.nav-sec{
+    display: flex;
+    gap: 0.25rem;
+    text-align: center ;
+   
+}
+MenuItem{
+    text-decoration: none;
+}
