@@ -1,0 +1,11 @@
+.custom-appbar{
+    background-color: var(--white-gray);
+} 
+.custom-toolbar{
+    display: flex;
+    justify-content: space-between;
+
+}
+.custom-iconbutton{
+    color: var(--blue);
+}

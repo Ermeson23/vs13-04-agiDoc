@@ -1,10 +1,8 @@
 import './App.css'
-
+import ButtonAppBar from './components/menu/Menu'
 function App() {
   return (
-    <>
-    <p>Hello, world!</p>
-    </>
+    <ButtonAppBar></ButtonAppBar>
   )
 }
 
