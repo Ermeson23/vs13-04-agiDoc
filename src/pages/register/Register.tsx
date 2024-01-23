@@ -1,9 +1,10 @@
 import Header from "../../components/header/Header"
+
 export default function Register(){
     return(
         <div>
          <Header />
-        <p>Register</p>
+        <h1>Olá, bem-vindos à página de Cadastro!</h1>
         </div>
     )
     

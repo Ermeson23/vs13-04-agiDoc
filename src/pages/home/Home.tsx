@@ -5,7 +5,7 @@ export default function Home(){
     return(
       <div>
         <Header></Header>
-        <p> OI!!!! ESTAMOS NA HOME</p>
+        <h1>Olá, bem-vindos a Home!</h1>
       </div>
     )
 }

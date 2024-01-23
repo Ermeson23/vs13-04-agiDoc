@@ -1,5 +1,6 @@
 import MenuItem from "../menuItem/MenuItem";
-import './navbar.css'
+import './NavBar.css'
+
 export default function NavBar() {
     return (
         <>
