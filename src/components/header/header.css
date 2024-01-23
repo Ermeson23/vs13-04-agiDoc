@@ -1,19 +1,21 @@
 .custom-header{
-  background-color: var(--white-gray);
+  background-color: var(--white-gray) !important;
   width: 100vw;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   display: flex;
   justify-content: center;
-  
+  align-items: center;
 }
 .header-container{
   width: 80vw;
   max-height: fit-content;
   padding: 0.5rem;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.custom-icon{
+  color: var(--blue) !important;
 }
 
 .logo-agidoc{
