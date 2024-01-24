@@ -1,0 +1,109 @@
+.custom-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 1rem;
+
+}
+.isolated-text{
+    width: 70%;
+    padding: 0.5rem;
+}
+.custom-about h1, .custom-about h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+.custom-about h2, .val-icon{
+    color: var(--blue);
+}
+.custom-about h1{
+    font-size: 2.5rem;
+}
+.custom-about h2{
+    font-size: 2rem;
+}
+.custom-about p{
+    font-size: 1.125rem;
+}
+.custom-about p, .custom-about span{
+    font-family: 'Inter', sans-serif;
+}
+
+.custom-about span{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.values-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+.value{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+}
+@media (max-width: 767px){
+    .isolated-text{
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .values-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .custom-about h1{
+        font-size: 2rem;
+    }
+    .custom-about h2{
+        font-size: 1.75rem;
+    }
+    .custom-about span{
+        font-size: 1rem;
+    }
+    .custom-about p{
+        font-size: 0.825rem;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .values-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1rem;
+      }
+    
+}
+@media (min-width: 1920px) {
+    .isolated-text{
+        width: 65%;
+        padding: 1rem;
+    }
+    .custom-about h1{
+        font-size: 2.875rem;
+    }
+    .custom-about h2{
+        font-size: 2.5rem;
+    }
+    .custom-about span{
+        font-size: 1.75rem;
+    }
+    .custom-about p{
+        font-size: 1.5rem;
+    }
+    
+ 
+}

@@ -1,11 +1,14 @@
-:root{
-    --white-gray: #F4FFF8; 
-    --dark-green: #1A383A;
-    --blue: #8BAAAD;
-    --text-black: #0000;
-    --text-white: #fff;
-    --sea-green: #4D6C6E;
 
+.page-render{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.header-section{
+    margin-bottom: 5rem;
 }
 
 
