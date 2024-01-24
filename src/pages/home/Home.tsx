@@ -5,6 +5,10 @@ import '../../App.css'
 import './home.css'
 import OurServices from "../../components/homeComponents/OurServices"
 
+import Footer from "../../components/footer/Footer"
+
+
+
 export default function Home(){
 
     return(
@@ -26,6 +30,7 @@ export default function Home(){
           <AboutSection></AboutSection>
           </div>
         </div>
+        <Footer></Footer>
         </section>
         
       </div>
