@@ -1,1 +1,15 @@
-{"orgId":"team_c8ZNSkIAox3OnhevwPfbdkz7","projectId":"prj_2Ng11nVkHZYwf3adFM487mAT1Jm7"}
+{
+  "projectId": "prj_2Ng11nVkHZYwf3adFM487mAT1Jm7",
+  "orgId": "team_c8ZNSkIAox3OnhevwPfbdkz7",
+  "settings": {
+    "createdAt": 1706016185936,
+    "framework": "vite",
+    "devCommand": null,
+    "installCommand": null,
+    "buildCommand": null,
+    "outputDirectory": null,
+    "rootDirectory": null,
+    "directoryListing": false,
+    "nodeVersion": "18.x"
+  }
+}

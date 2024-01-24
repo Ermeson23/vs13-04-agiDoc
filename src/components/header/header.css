@@ -30,6 +30,12 @@
     align-items: center;
 }
 
+@media(max-width: 889px) {
+  .desktop-links {
+    display: none;
+  }
+}
+
 @media (min-width: 1920px){
   .logo-agidoc{
     height: 5rem;
