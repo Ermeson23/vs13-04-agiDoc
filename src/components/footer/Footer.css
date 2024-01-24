@@ -1,0 +1,7 @@
+.custom-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4D6C6E;
+    height: 2.7rem;
+}
