@@ -58,6 +58,10 @@
     font-size: 1.25rem;
     border: transparent;
 }
+.intro-text button:hover{
+    background-color: var(--light-blue);
+    color: var(--dark-green);
+}
 
 .intro-img{
     padding: 0.5rem;

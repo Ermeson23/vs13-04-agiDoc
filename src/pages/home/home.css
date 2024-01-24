@@ -1,9 +1,21 @@
 .home-content{
     background-color: var(--dark-green);
     color: var(--text-white);
-    width: 100vw;
+    
 }
-.intro-container{
-    width: 80%;
+.container{
+    width: 80vw;
     padding: 2rem;
+}
+.service-container{
+    background-color: var(--white-gray);
+    
+}
+
+.info-container, .service-container, .about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
 }

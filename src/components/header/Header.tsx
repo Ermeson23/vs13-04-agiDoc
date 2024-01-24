@@ -33,11 +33,22 @@ const Header: React.FC<HeaderProps> = () => {
             size="large"
             edge="start"
             aria-label="menu"
-            sx={{ mr: 2 }}
+            sx={{ display: { xs: 'block', md: 'none' } }}
             onClick={toggleDrawer(true)}
           >
             <MenuIcon />
           </IconButton>
+          <ul className="desktop-links">
+            <li>
+              <Link to="/" className='link-nav'>Home</Link>
+            </li>
+            <li>
+              <Link to="/login" className='link-nav'>Login</Link>
+            </li>
+            <li>
+              <Link to="/register" className='link-nav'>Cadastro</Link>
+            </li>
+          </ul>
           <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
             <div role="presentation" onClick={toggleDrawer(false)} onKeyDown={toggleDrawer(false)}>
               <NavBar />

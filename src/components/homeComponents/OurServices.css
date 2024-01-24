@@ -1,0 +1,97 @@
+.custom-section {
+    text-align: center;
+    color: var(--blue);
+    background-color: var(--white-gray);
+    padding: 2rem 0;
+    width: auto;
+}
+
+.custom-section > h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.custom-section h2 {
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.custom-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.custom-card {
+    flex: 1;
+    width: 20rem;
+    height: 12.5rem;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+    background-color: var(--blue);
+    color: var(--text-white);
+    font-family: 'Bebas Neue', sans-serif;
+    border-radius: 0.625rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.custom-card:hover{
+    background-color: var(--light-blue);
+    color: var(--dark-green);
+}
+
+.custom-card p {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    font-size: 0.75rem;
+}
+
+@media (max-width: 767px){
+   
+    .custom-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .custom-card {
+        width: 12.5rem;
+        height: 11rem;
+        
+    }
+    
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .custom-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1rem;
+      }
+      .custom-card {
+        width: 11.5rem;
+        height: 12rem;
+        
+    }
+    
+    
+    
+}
+@media (min-width: 1920px) {
+    .custom-card {
+        width: 30rem;
+       
+        
+    }
+    .custom-card p {
+        font-size: 1rem;
+       
+        
+    }
+ 
+}

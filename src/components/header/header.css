@@ -29,11 +29,36 @@
     padding: 0.5rem;
     align-items: center;
 }
+.desktop-links{
+  display: flex;
+  gap: 0.5rem;
+  font-family: 'Bebas Neue';
+ 
+}
+.desktop-links li{
+  margin: 0.5rem;
+}
+.link-nav{
+  text-decoration: none;
+  font-size: 1.125rem;
+  color: var(--sea-green) ;
+}
+.link-nav:hover{
+  color: var(--dark-green);
+}
+
+@media(max-width: 889px) {
+  .desktop-links {
+    display: none;
+  }
+}
 
 @media (min-width: 1920px){
   .logo-agidoc{
     height: 5rem;
-    width: 20rem;
-  
-}
+    width: 20rem; 
+  }
+  .link-nav{
+    font-size: 1.75rem;
+  }
 }
