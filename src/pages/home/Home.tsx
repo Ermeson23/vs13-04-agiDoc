@@ -4,6 +4,7 @@ import AboutSection from "../../components/homeComponents/aboutSection"
 import '../../App.css'
 import './home.css'
 import OurServices from "../../components/homeComponents/OurServices"
+import Footer from "../../components/footer/Footer"
 
 export default function Home(){
 
@@ -26,6 +27,7 @@ export default function Home(){
           <AboutSection></AboutSection>
           </div>
         </div>
+        <Footer></Footer>
         </section>
         
       </div>
