@@ -3,7 +3,7 @@
     color: var(--text-white);
     width: 100vw;
 }
-.intro-container{
-    width: 80%;
+.container{
+    width: 80vw;
     padding: 2rem;
 }
