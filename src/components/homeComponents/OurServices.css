@@ -22,12 +22,12 @@
 .custom-row {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
 .custom-card {
     flex: 1;
-    max-width: 300px;
+    width: 20rem;
     flex-direction: column;
     margin: 1rem;
     padding: 1rem;
@@ -35,7 +35,8 @@
     background-color: #8BAAAD;
     color: #fff;
     font-family: 'Bebas Neue', sans-serif;
-    border-radius: 10px;
+    border-radius: 0.625rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .custom-card p {
@@ -44,7 +45,41 @@
     font-size: 0.75rem;
 }
 
-.custom-link {
-    text-decoration: none;
-    color: #fff;
+@media (max-width: 767px){
+   
+    .custom-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .custom-card {
+        width: 12.5rem;
+       
+        
+    }
+    
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .custom-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1rem;
+      }
+    
+}
+@media (min-width: 1920px) {
+    .custom-card {
+        width: 30rem;
+       
+        
+    }
+    .custom-card p {
+        font-size: 1rem;
+       
+        
+    }
+ 
 }
