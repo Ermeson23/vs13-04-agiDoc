@@ -3,11 +3,12 @@ import IntroSection from "../../components/homeComponents/introSection"
 import AboutSection from "../../components/homeComponents/aboutSection"
 import '../../App.css'
 import './home.css'
+import OurServices from "./OurServices"
 
 export default function Home(){
 
     return(
-      <div className="page-render home-content">
+      <div className="home-content">
         <section className="header-section"> 
         <Header></Header>
         </section>
@@ -15,6 +16,9 @@ export default function Home(){
         <div className="intro-container container">
           <IntroSection></IntroSection>
 
+        </div>
+        <div>
+          <OurServices></OurServices>
         </div>
         <div className="about-container container">
           <AboutSection></AboutSection>
