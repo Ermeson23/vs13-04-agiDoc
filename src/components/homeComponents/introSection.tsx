@@ -16,7 +16,7 @@ export default function IntroSection(){
                 Torne a gestão governamental mais eficiente e descomplicada com agiDoc
             </p>
             </div>
-            <button>SAIBA MAIS</button>
+            <a href='#about'><button>SAIBA MAIS</button></a>
         </div>
         <div className='intro-img'> 
             <img src={agidocimg} className='agidoc-img' alt='imagem representando um homem negro e uma mulher branca dando um aperto de mão com  um contrato ao fundo. fundo decorativo de dois círculos nas cores da paleta agidoc'></img>
