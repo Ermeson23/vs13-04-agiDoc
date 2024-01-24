@@ -1,7 +1,7 @@
 .custom-section {
     text-align: center;
-    color: #6B969A;
-    background-color: #F4FFF8;
+    color: var(--blue);
+    background-color: var(--white-gray);
     padding: 2rem 0;
     width: auto;
 }
@@ -28,15 +28,20 @@
 .custom-card {
     flex: 1;
     width: 20rem;
+    height: 12.5rem;
     flex-direction: column;
     margin: 1rem;
     padding: 1rem;
     flex-wrap: wrap;
-    background-color: #8BAAAD;
-    color: #fff;
+    background-color: var(--blue);
+    color: var(--text-white);
     font-family: 'Bebas Neue', sans-serif;
     border-radius: 0.625rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.custom-card:hover{
+    background-color: var(--light-blue);
+    color: var(--dark-green);
 }
 
 .custom-card p {
@@ -55,7 +60,7 @@
     }
     .custom-card {
         width: 12.5rem;
-       
+        height: 11rem;
         
     }
     
@@ -68,6 +73,13 @@
         grid-template-columns: repeat(2, 1fr); 
         gap: 1rem;
       }
+      .custom-card {
+        width: 11.5rem;
+        height: 12rem;
+        
+    }
+    
+    
     
 }
 @media (min-width: 1920px) {
