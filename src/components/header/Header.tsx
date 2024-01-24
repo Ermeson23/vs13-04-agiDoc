@@ -40,13 +40,13 @@ const Header: React.FC<HeaderProps> = () => {
           </IconButton>
           <ul className="desktop-links">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" className='link-nav'>Home</Link>
             </li>
             <li>
-              <Link to="/about">Login</Link>
+              <Link to="/login" className='link-nav'>Login</Link>
             </li>
             <li>
-              <Link to="/contact">Cadastro</Link>
+              <Link to="/register" className='link-nav'>Cadastro</Link>
             </li>
           </ul>
           <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
