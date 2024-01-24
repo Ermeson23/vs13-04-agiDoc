@@ -1,0 +1,9 @@
+.home-content{
+    background-color: var(--dark-green);
+    color: var(--text-white);
+    width: 100vw;
+}
+.intro-container{
+    width: 80%;
+    padding: 2rem;
+}

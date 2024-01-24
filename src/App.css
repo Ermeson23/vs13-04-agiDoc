@@ -1,0 +1,14 @@
+
+.page-render{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.header-section{
+    margin-bottom: 5rem;
+}
+
+

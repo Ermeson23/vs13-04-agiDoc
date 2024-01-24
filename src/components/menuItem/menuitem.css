@@ -1,0 +1,24 @@
+
+.link-menu{
+    text-decoration: none;
+    margin-right: 0.25rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.25rem;
+    color: var(--sea-green);
+}
+.link-menu:hover{
+    color: var(--dark-green);
+}
+
+@media (max-width: 767px){
+
+    .link-menu{
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1920px){
+
+    .link-menu{
+        font-size: 2rem;
+    }
+}

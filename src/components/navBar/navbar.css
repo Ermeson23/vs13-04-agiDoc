@@ -1,0 +1,11 @@
+.nav-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center ;
+    margin: 1rem;
+   
+}
+MenuItem{
+    text-decoration: none;
+}
