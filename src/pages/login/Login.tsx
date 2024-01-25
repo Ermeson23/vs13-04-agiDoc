@@ -46,7 +46,7 @@ const Login = () => {
     <div className='page-render-login page-render'>
       <section className="header-section"><Header /></section>
       <section className='main-section main-sec'>
-      <h1>LOGIN</h1>
+      <h1 className='light-theme-h'>LOGIN</h1>
       <div className='custom-row'>
         <div className='custom-form'>
           <h2 className='title'>Usuário e senha</h2>
