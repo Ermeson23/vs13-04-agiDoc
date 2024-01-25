@@ -142,7 +142,7 @@
  input:hover::placeholder{
   color: var(--text-white);
  }
- input{
+ .forms input{
   padding:0.125rem;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -154,7 +154,7 @@
   font-family: 'Inter', sans-serif;
  }
 
- p{
+ .forms p{
   text-transform: uppercase;
   text-align: center;
   background-color: var(--light-blue);
