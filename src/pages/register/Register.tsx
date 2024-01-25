@@ -43,7 +43,7 @@ const Register = () => {
         <Header></Header>
       </section>
       <section className='main-section main-sec-reg'>
-      <h1>Cadastrar usuário</h1>
+      <h1 className='light-theme-h'>Cadastrar usuário</h1>
       <form className="reg-form" onSubmit={handleSubmit(onSubmit)}>
         <h2 className='title'>Cadastro</h2>
         <div className="form-group">
