@@ -7,9 +7,13 @@
     background-color: var(--white-gray);
     
 }
+.footer{
+    background-color: var(--white-gray);
+    margin-top: 5rem;
+}
 .main-sec-reg{
     height: 100vh;
-   
+
     padding: 3rem;
    
   }
