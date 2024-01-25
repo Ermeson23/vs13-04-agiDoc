@@ -5,6 +5,8 @@ import Header from '../../components/header/Header';
 import { User, LockKey, IdentificationCard, Envelope, Lock} from '@phosphor-icons/react';
 import '../../App.css';
 import './Register.css';
+import Footer from '../../components/footer/Footer';
+
 
 interface UserRegistrationResponse {
   id: number;
@@ -40,6 +42,7 @@ const Register = () => {
       <section className="header-section"> 
         <Header></Header>
       </section>
+      <section className='main-section main-sec-reg'>
       <h1>Cadastrar usuário</h1>
       <form className="reg-form" onSubmit={handleSubmit(onSubmit)}>
         <h2 className='title'>Cadastro</h2>
@@ -95,7 +98,10 @@ const Register = () => {
         </div>
         <button className="reg-button" type="submit">Criar</button>
       </form>
+      </section>
     </div>
+    
+    <Footer></Footer>
     </div>
   );
 };
