@@ -99,9 +99,11 @@ const Register = () => {
         <button className="reg-button" type="submit">Criar</button>
       </form>
       </section>
+      <div className='footer'>
+      <Footer></Footer>
+      </div>
     </div>
     
-    <Footer></Footer>
     </div>
   );
 };

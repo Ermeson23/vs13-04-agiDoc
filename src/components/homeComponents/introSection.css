@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    width: 60%;
+    width: 70%;
     height: 100%;
     text-align: center;
     padding: 2rem;
@@ -116,13 +116,13 @@
     }
     .agidoc-img{
         width: 20rem;
-        height: 30rem;
+        height: 20rem;
     }
  
 }
 @media (min-width: 1920px) {
     .intro-text{
-        width: 80%;
+        width: 60%;
         padding: 1rem;
         
     }
@@ -130,7 +130,7 @@
         width: 60%;
     }
     .agidoc-img{
-        width: 40rem;
+        width: 30rem;
         height: 30rem;
     }
     .intro-text h1{
