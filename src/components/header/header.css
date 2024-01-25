@@ -47,7 +47,7 @@
   color: var(--dark-green);
 }
 
-@media(max-width: 889px) {
+@media(max-width: 599px) {
   .desktop-links {
     display: none;
   }
