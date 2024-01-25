@@ -128,7 +128,7 @@
   color: var(--dark-green);
   background-color: var(--light-blue);
  }
- h1{
+ .light-theme-h{
   color: var(--blue);
   font-size: 2rem;
   margin: 0;
