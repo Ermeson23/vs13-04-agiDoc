@@ -28,11 +28,10 @@ const Login = () => {
 
   const onSubmit = async (data: Form) => {
     try {
-      const response = await axios.get(
-        `http://localhost:3001/users?username=${data.userName}&password=${data.password}`
-      );
+      const response = await axios.get(`http://localhost:3001/users?email=${data.userName}&password=${data.password}`);
+
       if (response.data.length > 0) {
-        alert(`Login com sucesso:', ${response.data[0].id}`);
+        alert(`Login com sucesso: ${response.data[0].name}`);
         navigate('/');
       } else {
         console.error('Credenciais inválidas');

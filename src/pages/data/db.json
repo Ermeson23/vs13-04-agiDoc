@@ -1,33 +1,18 @@
 {
   "users": [
     {
-      "id": "447e",
-      "name": "ivo",
-      "cpf": "12312312312",
-      "email": "334",
-      "password": "123456"
-    },
-    {
-      "id": "2e5c",
-      "name": "Projeto Teste",
-      "cpf": "03462745205",
-      "email": "jose@a",
-      "password": "123456"
-    },
-    {
-      "id": "e8b7",
-      "name": "Projeto Teste",
+      "id": "65d4",
+      "name": "Clara Maestri",
       "cpf": "03462745205",
       "email": "clara@gmail.com",
-      "password": "1234567"
+      "password": "theogordo"
     },
     {
-      "id": "5a8f",
+      "id": "16aa",
       "name": "Ermeson",
-      "cpf": "034.627.452-05",
-      "email": "joseenem35@gmail.com",
-      "password": "1234567",
-      "passwordConfirmation": "12"
+      "cpf": "03462745205",
+      "email": "ermeson@gmail.com",
+      "password": "1234567"
     }
   ]
 }
