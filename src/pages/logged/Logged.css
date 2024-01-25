@@ -5,3 +5,8 @@
     background-color: var(--white-gray);
     width: 100vw;
 }
+
+.custom-flex {
+    display: flex;
+    gap: 5rem;
+}
