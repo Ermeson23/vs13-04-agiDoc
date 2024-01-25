@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #4D6C6E;
+    background-color: var(--sea-green);
+    color: var(--text-white);
     height: 2.7rem;
+    width: 100vw;
+  
 }
