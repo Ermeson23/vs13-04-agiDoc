@@ -19,7 +19,7 @@
 }
 
 .logo-agidoc{
-    height: 2rem;
+    height: 3rem;
     width: 8.5rem;
     margin: 0.5rem;
 }
@@ -56,7 +56,7 @@
 @media (min-width: 1920px){
   .logo-agidoc{
     height: 5rem;
-    width: 20rem; 
+    width: 14.15rem; 
   }
   .link-nav{
     font-size: 1.75rem;

@@ -148,6 +148,7 @@
   border-bottom-left-radius: 0;
   font-size: 1rem;
   border: 0.125rem solid var(--light-blue);
+  width: fit-content;
  }
 
  input, p{
