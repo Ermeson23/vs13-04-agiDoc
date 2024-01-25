@@ -20,6 +20,14 @@
       "cpf": "03462745205",
       "email": "clara@gmail.com",
       "password": "1234567"
+    },
+    {
+      "id": "5a8f",
+      "name": "Ermeson",
+      "cpf": "034.627.452-05",
+      "email": "joseenem35@gmail.com",
+      "password": "1234567",
+      "passwordConfirmation": "12"
     }
   ]
 }
