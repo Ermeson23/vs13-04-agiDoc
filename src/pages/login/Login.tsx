@@ -58,7 +58,7 @@ const Login = () => {
               </div>
 
               <input
-                type="email"
+                type="text"
                 placeholder="Endereço de e-mail"
                 {...register('userName')}
               />
