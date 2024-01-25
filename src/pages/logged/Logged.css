@@ -1,0 +1,7 @@
+.page-render-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white-gray);
+    width: 100vw;
+}
