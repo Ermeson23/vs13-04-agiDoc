@@ -18,7 +18,7 @@ O projeto propõe o desenvolvimento de uma plataforma que agilize o gerenciament
 ### 🖼️ Layout
 Foi utilizada uma paleta de cores definidas de acordo com a necessidade e adequação à plataforma. Para maior direcionamento, temos um projeto no [figma.](https://www.figma.com/file/pT3SOo3argDFQ0KCKShfyY/agiDoc?type=design&node-id=10-13&mode=design&t=IStmgsVjhgg1KDrm-0) 
 ## ⚙️ Como Executar na sua máquina 
-- 1 -  Clone o projeto com o seguinte link: 
+- 1 -  Clone o projeto com o seguinte comando: 
     ```
     git clone https://github.com/Ermeson23/vs13-03-eco-sos.git
     ```
