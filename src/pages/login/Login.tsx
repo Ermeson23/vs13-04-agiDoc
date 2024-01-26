@@ -46,7 +46,6 @@ const Login = () => {
       <section className="header-section"><Header /></section>
       <section className='main-section main-sec'>
       <h1 className='light-theme-h'>LOGIN</h1>
-      <div className='custom-row'>
         <div className='custom-form'>
           <h2 className='title'>Usuário e senha</h2>
           <form className="forms" onSubmit={handleSubmit(onSubmit)}>
@@ -86,7 +85,7 @@ const Login = () => {
               <Link to='/register'><button>Criar nova conta</button></Link>
             </div>
           </form>
-        </div>
+        
       </div>
       </section>
       <Footer></Footer>
