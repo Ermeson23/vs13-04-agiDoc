@@ -44,9 +44,9 @@
 }
 
 .custom-card p {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: normal;
-    font-size: 1.125rem !important;
+    font-size: 1rem;
 }
 
 @media (max-width: 767px){
