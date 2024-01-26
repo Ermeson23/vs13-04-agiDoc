@@ -4,13 +4,9 @@
     background-color: var(--white-gray);
     padding: 2rem 0;
     width: auto;
+
 }
 
-.custom-section > h2 {
-    font-size: 2.5rem;
-    font-weight: normal;
-    font-family: 'Bebas Neue', sans-serif;
-}
 
 .custom-section h2 {
     white-space: pre-line;

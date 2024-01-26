@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = () => {
             size="large"
             edge="start"
             aria-label="menu"
-            sx={{ display: { xs: 'block', md: 'none' } }}
+            sx={{ display: { xs: 'block', sm: 'none' } }}
             onClick={toggleDrawer(true)}
           >
             <MenuIcon />

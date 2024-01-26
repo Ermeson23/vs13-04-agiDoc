@@ -32,7 +32,7 @@ const Login = () => {
 
       if (response.data.length > 0) {
         alert(`Login com sucesso: ${response.data[0].name}`);
-        navigate('/');
+        navigate('/logged');
       } else {
         console.error('Credenciais inválidas');
       }
