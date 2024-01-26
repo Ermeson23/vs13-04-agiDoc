@@ -13,6 +13,7 @@
 }
 .main-section{
     height: fit-content;
+    min-height: 100vh;
 }
 
 .info-container, .service-container, .about-container{
