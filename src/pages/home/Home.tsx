@@ -12,7 +12,7 @@ import Footer from "../../components/footer/Footer"
 export default function Home(){
 
     return(
-      <div className="home-content">
+      <div className="home-content page-render">
         <section className="header-section"> 
         <Header></Header>
         </section>
@@ -30,9 +30,9 @@ export default function Home(){
           <AboutSection></AboutSection>
           </div>
         </div>
-        <Footer></Footer>
-        </section>
         
+        </section>
+        <Footer></Footer>
       </div>
     )
 }
