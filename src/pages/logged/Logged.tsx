@@ -65,6 +65,9 @@ export default function Logged() {
                     </section>
                 </section>
             </section>
+            <section className="footer>
+            <Footer></Footer>
+      </section>
         </div>
     )
 
