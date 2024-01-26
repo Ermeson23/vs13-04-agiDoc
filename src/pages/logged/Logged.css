@@ -46,3 +46,8 @@ h1, h2 {
     text-transform: uppercase;
     gap: 1rem;
 }
+
+.footer{
+    background-color: var(--white-gray);
+    margin-top: 5rem;
+}
