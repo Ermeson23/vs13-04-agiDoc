@@ -1,35 +1,88 @@
 import Header from '../../components/header/Header';
+import Footer from '../../components/footer/Footer';
 import './Logged.css';
 import '../../App.css'
+import {File, Info, Gear, PresentationChart, PenNib, FilePlus, FileSearch, ListMagnifyingGlass, PlusCircle } from '@phosphor-icons/react';
 
 export default function Logged() {
     return (
-        <div className='page-render-login page-render'>
+        <div className="page-render-login page-render">
             <section className="header-section">
                 <Header></Header>
             </section>
-            <section>
-                <h1>Área logada</h1>
-                <h2>Olá, Rafael</h2>
-                <p>Acesso rápido</p>
-                <div>
-                    <div>
-                        <p>Criar Novo Contrato</p>
+            <section className='easy-logged'>
+                <h1 className='light-theme-h h1-logged'>Área logada</h1>
+                <span className='greetings'>Olá, <strong className='nametxt'> Rafael </strong></span>
+                <h2 className='light-theme-h h2-main'> ACESSO RÁPIDO </h2>
+                <div className="custom-easy-acess">
+                   
+                    <a href="#contracts"><div className="custom-acess">
+                        <File size={32} weight="fill" />
+                        <p>CONTRATOS</p>
+                    </div></a>
+                    <a href="#analysis"><div className="custom-acess">
+                        <PresentationChart size={32} weight="fill" />
+                        <p>ANÁLISES</p>
+                    </div></a>
+
+                    <div className="custom-acess">
+                        <Info size={32} weight="fill" />
+                        <p>AJUDA</p>
                     </div>
-                    <div>
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M49.3352 14.024L33.4261 0.562501C33.2149 0.383973 32.9642 0.242408 32.6883 0.145892C32.4124 0.0493766 32.1167 -0.00019805 31.8182 5.94612e-07H4.54545C3.33993 5.94612e-07 2.18377 0.405219 1.33133 1.12651C0.478895 1.84781 0 2.82609 0 3.84615V46.1538C0 47.1739 0.478895 48.1522 1.33133 48.8735C2.18377 49.5948 3.33993 50 4.54545 50H45.4545C46.6601 50 47.8162 49.5948 48.6687 48.8735C49.5211 48.1522 50 47.1739 50 46.1538V15.3846C50.0002 15.132 49.9416 14.8818 49.8276 14.6484C49.7135 14.4149 49.5462 14.2028 49.3352 14.024ZM34.0909 6.5649L42.2415 13.4615H34.0909V6.5649ZM45.4545 46.1538H4.54545V3.84615H29.5455V15.3846C29.5455 15.8946 29.7849 16.3838 30.2111 16.7444C30.6373 17.1051 31.2154 17.3077 31.8182 17.3077H45.4545V46.1538ZM34.0909 30.7692C34.0909 31.2793 33.8515 31.7684 33.4252 32.1291C32.999 32.4897 32.4209 32.6923 31.8182 32.6923H27.2727V36.5385C27.2727 37.0485 27.0333 37.5376 26.6071 37.8983C26.1808 38.2589 25.6028 38.4615 25 38.4615C24.3972 38.4615 23.8192 38.2589 23.3929 37.8983C22.9667 37.5376 22.7273 37.0485 22.7273 36.5385V32.6923H18.1818C17.5791 32.6923 17.001 32.4897 16.5748 32.1291C16.1485 31.7684 15.9091 31.2793 15.9091 30.7692C15.9091 30.2592 16.1485 29.7701 16.5748 29.4094C17.001 29.0488 17.5791 28.8462 18.1818 28.8462H22.7273V25C22.7273 24.49 22.9667 24.0008 23.3929 23.6402C23.8192 23.2795 24.3972 23.0769 25 23.0769C25.6028 23.0769 26.1808 23.2795 26.6071 23.6402C27.0333 24.0008 27.2727 24.49 27.2727 25V28.8462H31.8182C32.4209 28.8462 32.999 29.0488 33.4252 29.4094C33.8515 29.7701 34.0909 30.2592 34.0909 30.7692Z" fill="#F4FFF8" />
-                        </svg>
-                        <p>consultar meus contratos</p>
-                    </div>
-                    <div>
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M49.3352 14.024L33.4261 0.562501C33.2149 0.383973 32.9642 0.242408 32.6883 0.145892C32.4124 0.0493766 32.1167 -0.00019805 31.8182 5.94612e-07H4.54545C3.33993 5.94612e-07 2.18377 0.405219 1.33133 1.12651C0.478895 1.84781 0 2.82609 0 3.84615V46.1538C0 47.1739 0.478895 48.1522 1.33133 48.8735C2.18377 49.5948 3.33993 50 4.54545 50H45.4545C46.6601 50 47.8162 49.5948 48.6687 48.8735C49.5211 48.1522 50 47.1739 50 46.1538V15.3846C50.0002 15.132 49.9416 14.8818 49.8276 14.6484C49.7135 14.4149 49.5462 14.2028 49.3352 14.024ZM34.0909 6.5649L42.2415 13.4615H34.0909V6.5649ZM45.4545 46.1538H4.54545V3.84615H29.5455V15.3846C29.5455 15.8946 29.7849 16.3838 30.2111 16.7444C30.6373 17.1051 31.2154 17.3077 31.8182 17.3077H45.4545V46.1538ZM34.0909 30.7692C34.0909 31.2793 33.8515 31.7684 33.4252 32.1291C32.999 32.4897 32.4209 32.6923 31.8182 32.6923H27.2727V36.5385C27.2727 37.0485 27.0333 37.5376 26.6071 37.8983C26.1808 38.2589 25.6028 38.4615 25 38.4615C24.3972 38.4615 23.8192 38.2589 23.3929 37.8983C22.9667 37.5376 22.7273 37.0485 22.7273 36.5385V32.6923H18.1818C17.5791 32.6923 17.001 32.4897 16.5748 32.1291C16.1485 31.7684 15.9091 31.2793 15.9091 30.7692C15.9091 30.2592 16.1485 29.7701 16.5748 29.4094C17.001 29.0488 17.5791 28.8462 18.1818 28.8462H22.7273V25C22.7273 24.49 22.9667 24.0008 23.3929 23.6402C23.8192 23.2795 24.3972 23.0769 25 23.0769C25.6028 23.0769 26.1808 23.2795 26.6071 23.6402C27.0333 24.0008 27.2727 24.49 27.2727 25V28.8462H31.8182C32.4209 28.8462 32.999 29.0488 33.4252 29.4094C33.8515 29.7701 34.0909 30.2592 34.0909 30.7692Z" fill="#F4FFF8" />
-                        </svg>
-                        <p>consultar meus contratos</p>
+
+                    <div className="custom-acess">
+
+                        <Gear size={32} weight="fill" />
+
+                        <p>CONFIGURAÇÕES DA CONTA</p>
                     </div>
                 </div>
-            </section>
+                </section>
+                <section className='logged-dark-section'>
+                <h1 className="h1-dark-logged">Menu</h1>
+                <div className='divide-section'> 
+                <h2 className="h2-dark-logged">CONTRATOS</h2>
+                <div className='menu-cards-div'id="contracts">
+                    <div className='custom-card-menu'>
+                        <FilePlus className='icon-card-menu' size={24} weight="fill" />
+                        <p>NOVO CONTRATO</p>
+                     </div>
+                    <div className='custom-card-menu'>
+                        <PenNib className='icon-card-menu' size={24} weight="fill" />
+                        <p> assinar contrato</p> 
+                    </div>
+                    <div className='custom-card-menu'>
+                        <FileSearch className='icon-card-menu' size={24} weight="fill" />
+                        <p> consultar contratos</p> 
+                     </div>
+
+                </div>
+
+                </div>
+                <div className='divide-section' id="analysis"> 
+                <h2 className="h2-dark-logged">ANÁLISES</h2>
+                <div className='menu-cards-div'>
+                    <div className='custom-card-menu'>
+                        <PlusCircle className='icon-card-menu' size={24} weight="fill" />
+                        <p> NOVA ANÁLISE</p>   
+                    </div>
+                    <div className='custom-card-menu'>
+                        <ListMagnifyingGlass className='icon-card-menu' size={24} weight="fill" />
+                        <p> INSIGHTS</p>
+                     </div>
+                    <div className='custom-card-menu'>
+                        <FileSearch className='icon-card-menu' size={24} weight="fill" />
+                        <p> consultar análises</p> 
+                     </div>
+
+
+                </div>
+                </div>
+
+
+                <Footer></Footer>
+                </section>
+            
         </div>
     )
 
