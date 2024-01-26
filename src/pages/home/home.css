@@ -11,6 +11,9 @@
     background-color: var(--white-gray);
     
 }
+.main-section{
+    height: fit-content;
+}
 
 .info-container, .service-container, .about-container{
     display: flex;
