@@ -1,15 +1,16 @@
 .custom-intro{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+
 
 }
 .intro-text{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    width: 70%;
+    width: 50%;
     height: 100%;
     text-align: center;
     padding: 2rem;
@@ -42,7 +43,7 @@
     font-family: 'Inter', sans-serif;
 }
 .isolate-desc{
-    width: 50%;
+    width: 70%;
     text-align: center;
 }
 .intro-text button, .intro-text h1{
@@ -64,7 +65,7 @@
 }
 
 .intro-img{
-    padding: 0.5rem;
+    padding: 0.25rem;
     align-items: center;
 }
 .agidoc-img{
