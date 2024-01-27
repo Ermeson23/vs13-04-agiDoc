@@ -8,13 +8,17 @@ import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import './Logged.css';
 import '../../App.css'
-import { File, Info, Gear, PresentationChart, PenNib, FilePlus, FileSearch, ListMagnifyingGlass, PlusCircle } from '@phosphor-icons/react';
+import { File, Info, PresentationChart, PenNib, FilePlus, FileSearch, ListMagnifyingGlass, PlusCircle } from '@phosphor-icons/react';
 
 export default function Logged() {
 
-    const [open, setOpen] = useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+    const [openHelp, setOpenHelp] = useState(false);
+    const handleOpen = () => setOpenHelp(true);
+    const handleClose = () => setOpenHelp(false);
+
+    const [openSettings, setOpenSettings] = useState(false);
+    const handleOpenSettings = () => setOpenSettings(true);
+    const handleCloseSettings = () => setOpenSettings(false);
 
     const style = {
         position: 'absolute' as 'absolute',
@@ -49,7 +53,7 @@ export default function Logged() {
                     </div></a>
 
                     <Modal
-                        open={open}
+                        open={openHelp}
                         onClose={handleClose}
                         aria-labelledby="modal-modal-title"
                         aria-describedby="modal-modal-description"
@@ -85,8 +89,8 @@ export default function Logged() {
                     </div></a>
 
                     <Modal
-                        open={open}
-                        onClose={handleClose}
+                        open={openSettings}
+                        onClose={handleCloseSettings}
                         aria-labelledby="modal-modal-title"
                         aria-describedby="modal-modal-description"
                     >
@@ -98,24 +102,26 @@ export default function Logged() {
                                 <p>
                                     <ol>
                                         <li>
-                                            <strong>Perguntas Frequentes (FAQ):</strong>
-                                            <p>Encontre respostas rápidas para as perguntas mais comuns em nossa seção de Perguntas Frequentes. Se sua dúvida não estiver lá, sinta-se à vontade para entrar em contato conosco.</p>
-
-                                            <strong>E-mail:</strong> <span>support@agidoc.com</span>
-                                            <p>
-                                                Nossa equipe de suporte está disponível para responder às suas perguntas de segunda a sexta, das 9h às 18h. Aguarde um retorno dentro de 24 horas úteis.
-                                            </p>
+                                            <a href="#">Perfil do Usuário</a>
                                         </li>
                                         <li>
-                                            <strong>Suporte Técnico:</strong>
-                                            <p>Caso precise de assistência mais personalizada, nossa equipe de suporte técnico está pronta para ajudar. Envie-nos uma mensagem e responderemos o mais rápido possível.</p>
+                                            <a href="#">Preferências de Notificação</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Configurações de Privacidade</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Idioma e Região</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Histórico de Atividades</a>
                                         </li>
                                     </ol>
                                 </p>
                             </Typography>
                         </Box>
                     </Modal>
-                    <a href="#account-settings" onClick={handleOpen}><div className="custom-acess">
+                    <a href="#account-settings" onClick={handleOpenSettings}><div className="custom-acess">
                         <Info size={32} weight="fill" />
                         <p>CONFIGURAÇÕES DA CONTA</p>
                     </div></a>
