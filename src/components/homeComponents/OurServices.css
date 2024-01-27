@@ -52,7 +52,7 @@
 @media (max-width: 767px){
    
     .custom-row{
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         justify-content: center;
         gap: 0.5rem;
