@@ -26,10 +26,12 @@ export default function Logged() {
         left: '50%',
         transform: 'translate(-50%, -50%)',
         width: 400,
-        bgcolor: 'background.paper',
+        bgcolor: 'var(--blue)',
+        color: '#fff',
         border: '2px solid #000',
         boxShadow: 24,
         p: 4,
+        borderRadius: 5
     };
 
     return (
@@ -99,7 +101,7 @@ export default function Logged() {
                                 Bem-vindo às configurações da conta, como podemos te ajudar?
                             </Typography>
                             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                                <p>
+                                <p className="custom-links">
                                     <ol>
                                         <li>
                                             <a href="#">Perfil do Usuário</a>
