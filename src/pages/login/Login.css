@@ -6,19 +6,16 @@
     width: 100vw;
   }
 .main-sec{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   padding: 5rem;
 }
   label {
     display: none;
   }
-  
-  .custom-row {
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-    
-  }
+
   
   .custom-form {
     display: flex;
