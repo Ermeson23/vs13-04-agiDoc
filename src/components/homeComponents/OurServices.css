@@ -19,7 +19,7 @@
 }
 
 .custom-row {
-    display: grid !important; 
+    display: grid; 
     grid-template-columns: repeat(2, 1fr); 
     gap: 1rem;
 }
@@ -52,7 +52,7 @@
 @media (max-width: 767px){
    
     .custom-row{
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         justify-content: center;
         gap: 0.5rem;
