@@ -108,6 +108,19 @@ a{
     background-color: var(--blue);
 }
 
+.custom-links ol li {
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.custom-links a {
+    color: #fff;
+}
+
+.custom-links a:hover {
+    font-weight: bold;
+}
+
 .footer-sec{
     background-color: var(--sea-green);
     width: auto;
