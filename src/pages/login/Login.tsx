@@ -8,6 +8,8 @@ import '../../App.css'
 import Header from '../../components/header/Header';
 import './Login.css';
 import { User, LockKey} from '@phosphor-icons/react';
+import { useContext } from 'react';
+import UserContext from '../context/UserContext';
 
 interface Form {
   userName: string;
@@ -25,17 +27,22 @@ const Login = () => {
   });
 
   const navigate = useNavigate();
+  const { getUser, onLogin } = useContext(UserContext);
 
   const onSubmit = async (data: Form) => {
     try {
-      const response = await axios.get(`http://localhost:3001/users?email=${data.userName}&password=${data.password}`);
-
-      if (response.data.length > 0) {
-        alert(`Login com sucesso: ${response.data[0].name}`);
-        navigate('/logged');
-      } else {
-        console.error('Credenciais inválidas');
-      }
+      axios.get(`http://localhost:3001/users?email=${data.userName}&password=${data.password}`)
+        .then((response) => {
+          if (response.data.length > 0) {
+            const loggedUserId = response.data[0].id;
+            onLogin(loggedUserId);
+            alert(`Login com sucesso: ${response.data[0].name}`);
+            navigate('/logged');
+            getUser(loggedUserId);
+          } else {
+            console.error('Credenciais inválidas');
+          }
+        });
     } catch (error) {
       console.error('Login falhou:', error);
     }
