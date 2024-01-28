@@ -4,9 +4,11 @@ import Home from '../../pages/home/Home';
 import Register from '../../pages/register/Register';
 import Login from '../../pages/login/Login';
 import Logged from '../../pages/logged/Logged';
+import { UserProvider } from '../../pages/context/UserContext';
 
 const AppRoutes: React.FC = () => {
   return (
+    <UserProvider>
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -15,6 +17,7 @@ const AppRoutes: React.FC = () => {
         <Route path="/logged" element={<Logged />} />
       </Routes>
     </Router>
+    </UserProvider>
   );
 };
 

@@ -1,14 +1,16 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
+import { File, Info, PresentationChart, PenNib, FilePlus, FileSearch, ListMagnifyingGlass, PlusCircle } from '@phosphor-icons/react';
+
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import './Logged.css';
 import '../../App.css'
-import { File, Info, PresentationChart, PenNib, FilePlus, FileSearch, ListMagnifyingGlass, PlusCircle } from '@phosphor-icons/react';
+import UserContext from '../context/UserContext';
 
 export default function Logged() {
 
@@ -34,6 +36,8 @@ export default function Logged() {
         borderRadius: 5
     };
 
+    const { user } = useContext(UserContext);
+
     return (
         <div className="page-render-login page-render">
             <section className="header-section">
@@ -41,7 +45,7 @@ export default function Logged() {
             </section>
             <section className='easy-logged'>
                 <h1 className='light-theme-h h1-logged'>Área logada</h1>
-                <span className='greetings'>Olá, <strong className='nametxt'> Rafael </strong></span>
+                <span className='greetings'>Olá, <strong className='nametxt'> { user?.name } </strong></span>
                 <h2 className='light-theme-h h2-main'> ACESSO RÁPIDO </h2>
                 <div className="custom-easy-acess">
 
