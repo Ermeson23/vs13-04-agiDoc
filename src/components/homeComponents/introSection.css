@@ -1,18 +1,17 @@
 .custom-intro{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-
+    padding: 2rem;
 }
 .intro-text{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    width: 60%;
+    width: 50%;
     height: 100%;
     text-align: center;
-    padding: 2rem;
+    padding: 0.5rem;
     align-items: center;
     justify-content: center;
 }
@@ -42,7 +41,7 @@
     font-family: 'Inter', sans-serif;
 }
 .isolate-desc{
-    width: 50%;
+    width: 70%;
     text-align: center;
 }
 .intro-text button, .intro-text h1{
@@ -64,7 +63,7 @@
 }
 
 .intro-img{
-    padding: 0.5rem;
+    padding: 0.25rem;
     align-items: center;
 }
 .agidoc-img{
@@ -85,7 +84,7 @@
     }
     .agidoc-img{
         width: 15.5rem;
-        height: 17.5rem;
+        height: 15.5rem;
     }
     .intro-img{
         padding: 0.125rem;
@@ -116,13 +115,13 @@
     }
     .agidoc-img{
         width: 20rem;
-        height: 30rem;
+        height: 20rem;
     }
  
 }
 @media (min-width: 1920px) {
     .intro-text{
-        width: 80%;
+        width: 60%;
         padding: 1rem;
         
     }
@@ -130,7 +129,7 @@
         width: 60%;
     }
     .agidoc-img{
-        width: 40rem;
+        width: 30rem;
         height: 30rem;
     }
     .intro-text h1{

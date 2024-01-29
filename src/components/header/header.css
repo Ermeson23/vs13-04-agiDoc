@@ -20,7 +20,7 @@
 
 .logo-agidoc{
     height: 3rem;
-    width: 10rem;
+    width: 8.5rem;
     margin: 0.5rem;
 }
 .nav-container{
@@ -47,7 +47,7 @@
   color: var(--dark-green);
 }
 
-@media(max-width: 889px) {
+@media(max-width: 599px) {
   .desktop-links {
     display: none;
   }
@@ -56,7 +56,7 @@
 @media (min-width: 1920px){
   .logo-agidoc{
     height: 5rem;
-    width: 20rem; 
+    width: 14.15rem; 
   }
   .link-nav{
     font-size: 1.75rem;

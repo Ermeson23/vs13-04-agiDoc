@@ -1,0 +1,153 @@
+.page-render-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white-gray);
+    width: 100vw;
+}
+.easy-logged{
+    padding:3rem;
+    margin-top: 2rem;
+}
+.logged-dark-section{
+    background-color: var(--dark-green);
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-white);
+}
+h1, h2 {
+    text-align: center;
+}
+.h2-logged , .h2-dark-logged{
+    font-size: 1.75rem;
+}
+.h2-dark-logged{
+    margin-bottom: 0;
+}
+.h2-main{
+    font-size: 1.25rem;
+}
+.h1-dark-logged, .h1-logged{
+    font-size: 2.5rem;
+    margin: 0;
+}
+.greetings{
+    text-align: left;
+    font-size: 1.85rem;
+    color: var(--dark-green);
+    font-family: 'Inter', sans-serif;
+}
+.custom-easy-acess{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem;
+
+}
+.nametxt:hover{
+    color: var(--blue);
+}
+
+.custom-acess {
+    padding: 0.75rem;
+    display: flex;
+    background-color: var(--blue);
+    width: 17.5rem;
+    height: auto;
+    border-radius: 0.625rem;
+    color: var(--text-white);
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.custom-acess:hover{
+    color: var(--dark-green);
+    background-color: var(--light-blue);
+}
+.custom-acess p{
+    font-size: 1rem;
+    font-family: 'Inter';
+}
+.divide-section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.menu-cards-div{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 2rem;
+}
+a{
+    text-decoration: none;
+}
+.custom-card-menu {
+    padding: 0.5rem;
+    display: flex;
+    background-color: var(--light-blue);
+    width: 15.5rem;
+    height: auto;
+    border-radius: 10px;
+    color: var(--dark-green);
+    text-transform: uppercase;
+
+}
+.custom-card-menu p{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem;
+    margin: 0;
+}
+.custom-card-menu:hover {
+    color: var(--text-white);
+    background-color: var(--blue);
+}
+
+.custom-links ol li {
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.custom-links a {
+    color: #fff;
+}
+
+.custom-links a:hover {
+    font-weight: bold;
+}
+
+.footer-sec{
+    background-color: var(--sea-green);
+    width: auto;
+
+}
+.icon-card-menu{
+    margin: 0;
+}
+@media (max-width:767px){
+    .custom-easy-acess{
+        display: flex; 
+       flex-direction: column;
+    
+    }
+    .menu-cards-div{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+@media (min-width: 1920px){
+    .page-render-login {
+        height: 100vh;
+        width: 100vw;
+    }
+    .easy-logged{
+        padding:5rem;
+        margin-top: 5rem;
+    }
+}

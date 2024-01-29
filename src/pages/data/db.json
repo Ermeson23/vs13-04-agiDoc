@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "65d4",
+      "name": "Clara Maestri",
+      "cpf": "03462745205",
+      "email": "clara@gmail.com",
+      "password": "theogordo"
+    },
+    {
+      "id": "16aa",
+      "name": "Ermeson",
+      "cpf": "03462745205",
+      "email": "ermeson@gmail.com",
+      "password": "1234567"
+    }
+  ]
+}
