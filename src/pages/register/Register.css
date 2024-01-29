@@ -6,11 +6,9 @@
     width: 100vw;
     background-color: var(--white-gray);
     box-sizing: border-box;
+    padding-bottom: 15rem;
 }
-.footer{
-    background-color: var(--white-gray);
-    margin-top: 5rem;
-}
+
 .main-sec-reg{
     height: 100vh;
     padding: 3rem;
