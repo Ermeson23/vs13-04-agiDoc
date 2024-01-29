@@ -8,6 +8,8 @@ import '../../App.css'
 import Header from '../../components/header/Header';
 import './Login.css';
 import { User, LockKey} from '@phosphor-icons/react';
+import { useContext } from 'react';
+import UserContext from '../context/UserContext';
 
 interface Form {
   userName: string;
@@ -25,17 +27,22 @@ const Login = () => {
   });
 
   const navigate = useNavigate();
+  const { getUser, onLogin } = useContext(UserContext);
 
   const onSubmit = async (data: Form) => {
     try {
-      const response = await axios.get(`http://localhost:3001/users?email=${data.userName}&password=${data.password}`);
-
-      if (response.data.length > 0) {
-        alert(`Login com sucesso: ${response.data[0].name}`);
-        navigate('/logged');
-      } else {
-        console.error('Credenciais inválidas');
-      }
+      axios.get(`http://localhost:3001/users?email=${data.userName}&password=${data.password}`)
+        .then((response) => {
+          if (response.data.length > 0) {
+            const loggedUserId = response.data[0].id;
+            onLogin(loggedUserId);
+            alert(`Login com sucesso: ${response.data[0].name}`);
+            navigate('/logged');
+            getUser(loggedUserId);
+          } else {
+            console.error('Credenciais inválidas');
+          }
+        });
     } catch (error) {
       console.error('Login falhou:', error);
     }
@@ -46,7 +53,6 @@ const Login = () => {
       <section className="header-section"><Header /></section>
       <section className='main-section main-sec'>
       <h1 className='light-theme-h'>LOGIN</h1>
-      <div className='custom-row'>
         <div className='custom-form'>
           <h2 className='title'>Usuário e senha</h2>
           <form className="forms" onSubmit={handleSubmit(onSubmit)}>
@@ -79,14 +85,14 @@ const Login = () => {
             </div>
             {errors.password && <p>{errors.password.message}</p>}
             <div>
-            <button className="button-enter" type="submit">Entrar</button>
+            <button className="button-enter" type="submit" aria-label='esse botão fará o login'>Entrar</button>
             </div>
             <div className='isolated-btns'>
               <button>Esqueci minha senha</button>
-              <Link to='/register'><button>Criar nova conta</button></Link>
+              <Link to='/register'><button aria-label='redireciona para a área de cadastro caso o usuário não tenha conta'>Criar nova conta</button></Link>
             </div>
           </form>
-        </div>
+        
       </div>
       </section>
       <Footer></Footer>

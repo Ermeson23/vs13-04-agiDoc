@@ -3,17 +3,15 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-
+    padding: 2rem;
 }
 .intro-text{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
     width: 50%;
     height: 100%;
     text-align: center;
-    padding: 2rem;
+    padding: 0.5rem;
     align-items: center;
     justify-content: center;
 }

@@ -58,7 +58,8 @@ const Register = () => {
       <div className="register-container">
         <section className="header-section">
           <Header></Header>
-        </section>
+        </section >
+        <section className="main-sec-reg">
         <h1 className='light-theme-h'>Cadastrar usuário</h1>
         <form className="reg-form" onSubmit={handleSubmit(onSubmit)}>
           <h2 className='title'>Cadastro</h2>
@@ -137,10 +138,10 @@ const Register = () => {
           </div>
           <button className="reg-button" type="submit">Criar</button>
         </form>
+        </section>
       </div>
-      <section className="footer">
+    
       <Footer></Footer>
-      </section>
     </div>
   );
 };
