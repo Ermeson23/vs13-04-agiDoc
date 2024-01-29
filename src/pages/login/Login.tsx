@@ -49,7 +49,8 @@ const Login = () => {
   };
 
   return (
-    <div className='page-render-login page-render'>
+    <div className='page-render'>
+       <div className="page-render-login">
       <section className="header-section"><Header /></section>
       <section className='main-section main-sec'>
       <h1 className='light-theme-h'>LOGIN</h1>
@@ -92,9 +93,11 @@ const Login = () => {
               <Link to='/register'><button aria-label='redireciona para a área de cadastro caso o usuário não tenha conta'>Criar nova conta</button></Link>
             </div>
           </form>
-        
+         
+      
       </div>
       </section>
+      </div>
       <Footer></Footer>
     </div>
     
