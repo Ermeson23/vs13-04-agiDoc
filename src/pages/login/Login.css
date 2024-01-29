@@ -1,17 +1,19 @@
 .page-render-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: var(--white-gray);
+    width: 100vw;
+    box-sizing: border-box;
+  }
+.main-sec{
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: var(--white-gray);
-  width: 100vw;
-}
-
-.main-sec {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   padding: 5rem;
+  box-sizing: border-box;
 }
 
 .custom-form {
@@ -158,4 +160,16 @@ p {
   border-radius: 0.5rem;
   color: var(--dark-green);
   font-weight: 600;
+ }
+ 
+ @media (max-width:767px){
+  .main-sec{
+    padding: 1rem;
+  }
+  
+}
+@media (max-width:350px){
+  .main-sec{
+    padding: 0.5rem;
+  }
 }

@@ -37,3 +37,9 @@ Foi utilizada uma paleta de cores definidas de acordo com a necessidade e adequa
 - Google Fonts
   ### ✨ Bibliotecas online
   Para os ícones, utilizamos [phospor icons](https://phosphoricons.com/), para as fontes [Google Fonts](https://fonts.google.com/) e para obter o favicon, [SVG repo](https://www.svgrepo.com/)
+## 📝 Checklist para o back-end/QA
+- Conexão da API
+- Validação de perfis de usuário (ex: será necessário um user admin? existem rotas diferentes para cada tipo de usuário?)
+- Autenticação do login
+- Realização de cadastro utilizando a API
+- Páginas com as funcionalidades: verificar e validar com o back-end e QA para implementá-las no front-end.

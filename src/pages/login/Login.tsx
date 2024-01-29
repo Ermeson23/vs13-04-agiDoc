@@ -49,8 +49,9 @@ const Login = () => {
   };
 
   return (
-    <div className='page-render-login page-render'>
-      <section className='header-section'><Header /></section>
+    <div className='page-render'>
+       <div className="page-render-login">
+      <section className="header-section"><Header /></section>
       <section className='main-section main-sec'>
         <h1 tabIndex={21} className='light-theme-h'>LOGIN</h1>
         <div className='custom-form'>
@@ -85,16 +86,18 @@ const Login = () => {
             </div>
             {errors.password && <p tabIndex={26}>{errors.password.message}</p>}
             <div>
-              <button tabIndex={27} className="button-enter" type="submit">Entrar</button>
+            <button tabIndex={27} className="button-enter" type="submit" aria-label='esse botão fará o login'>Entrar</button>
             </div>
             <div className='isolated-btns'>
               <button tabIndex={28}>Esqueci minha senha</button>
-              <Link tabIndex={29} to='/register'><button>Criar nova conta</button></Link>
+              <Link tabIndex={29} to='/register'><button aria-label='redireciona para a área de cadastro caso o usuário não tenha conta'>Criar nova conta</button></Link>
             </div>
           </form>
-
-        </div>
+         
+      
+      </div>
       </section>
+      </div>
       <Footer></Footer>
     </div>
 
