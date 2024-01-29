@@ -21,7 +21,7 @@ Foi utilizada uma paleta de cores definidas de acordo com a necessidade e adequa
 ## ⚙️ Como Executar na sua máquina 
 - 1 -  Clone o projeto com o seguinte comando: 
     ```
-    git clone https://github.com/Ermeson23/vs13-03-eco-sos.git
+    git clone https://github.com/Ermeson23/vs13-04-agiDoc.git
     ```
 - 2 -  execute "npm install" para instalar as dependencias do package
 - 3 -  execute "npm run server" para rodar o script da "API" do jsonServer
