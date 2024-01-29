@@ -3,8 +3,8 @@ import { LockKey, ChartLineUp, ArrowSquareOut, PersonArmsSpread} from '@phosphor
 export default function AboutSection(){
     return(
         <div className='custom-about'>
-            <h1> QUEM SOMOS? </h1>
-            <div className='isolated-text'>
+            <h2 tabIndex={14}> QUEM SOMOS? </h2>
+            <div className='isolated-text' tabIndex={15}>
                 <p>
                     Desafios no processo licitatório? 
                     O agiDoc surge como uma solução abrangente, 
@@ -15,26 +15,26 @@ export default function AboutSection(){
                     proporcionando uma gestão de contratos mais eficiente e ágil. 
                 </p>
             </div>
-            <h2>NOSSOS VALORES</h2>
+            <h2 tabIndex={16}>NOSSOS VALORES</h2>
             <div className='values-container'>
                 <div className='value' id='seguranca'>
                     <LockKey size={50} weight="fill" className='val-icon'/>
-                    <span> SEGURANÇA </span>
+                    <span tabIndex={17}> SEGURANÇA </span>
                 </div>
 
                 <div className='value' id='desempenho'>
                     <ChartLineUp size={50} weight="fill"  className='val-icon'/>
-                    <span> DESEMPENHO </span>
+                    <span tabIndex={18}> DESEMPENHO </span>
                 </div>
 
                 <div className='value' id='escalabilidade'>
                     <ArrowSquareOut size={50} weight="fill"  className='val-icon'/>
-                    <span> ESCALABILIDADE </span>
+                    <span tabIndex={19}> ESCALABILIDADE </span>
                 </div>
 
                 <div className='value' id='acessibilidade'>
                     <PersonArmsSpread size={50} weight="fill"  className='val-icon'/>
-                    <span> ACESSIBILIDADE </span>
+                    <span tabIndex={20}> ACESSIBILIDADE </span>
                 </div>
 
             </div>

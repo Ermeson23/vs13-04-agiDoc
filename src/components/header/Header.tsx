@@ -27,7 +27,7 @@ const Header: React.FC<HeaderProps> = () => {
       <AppBar className="custom-header" position='fixed'>
         <Toolbar className='header-container'>
           <Link className='link-menu' to='/'>{
-            <img src={logo} alt="logo da agidoc com relógio representando agilidade. a palavra agi está em cor azul e doc está em verde" className='logo-agidoc' />}
+            <img src={logo} alt="logo da agidoc com relógio representando agilidade. a palavra agi está em cor azul e doc está em verde" className='logo-agidoc' tabIndex={1}/>}
           </Link>
           <IconButton className='custom-icon'
             size="large"
@@ -40,13 +40,13 @@ const Header: React.FC<HeaderProps> = () => {
           </IconButton>
           <ul className="desktop-links">
             <li>
-              <Link to="/" className='link-nav'>Home</Link>
+              <Link to="/" className='link-nav' tabIndex={2}>Home</Link>
             </li>
             <li>
-              <Link to="/login" className='link-nav'>Login</Link>
+              <Link to="/login" className='link-nav' tabIndex={3}>Login</Link>
             </li>
             <li>
-              <Link to="/register" className='link-nav'>Cadastro</Link>
+              <Link to="/register" className='link-nav' tabIndex={4}>Cadastro</Link>
             </li>
           </ul>
           <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
