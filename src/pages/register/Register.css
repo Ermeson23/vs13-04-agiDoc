@@ -5,7 +5,7 @@
     margin-top: 50px;
     width: 100vw;
     background-color: var(--white-gray);
-    
+    box-sizing: border-box;
 }
 .footer{
     background-color: var(--white-gray);
@@ -14,6 +14,7 @@
 .main-sec-reg{
     height: 100vh;
     padding: 3rem;
+    box-sizing: border-box;
    
 }
 
@@ -87,3 +88,16 @@ color: var(--dark-green);
 font-weight: 600;
 margin: 0.25rem;
 }
+
+@media (max-width:767px){
+    .main-sec-reg{
+      padding: 1rem;
+    }
+    
+  }
+  @media (max-width:350px){
+    .main-sec-reg{
+      padding: 0.5rem;
+    }
+    
+  }
