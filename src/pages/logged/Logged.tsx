@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-
+import useAuth from '../context/UserAuth';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
@@ -21,6 +21,12 @@ export default function Logged() {
     const [openSettings, setOpenSettings] = useState(false);
     const handleOpenSettings = () => setOpenSettings(true);
     const handleCloseSettings = () => setOpenSettings(false);
+
+    const { isAuthenticated } = useAuth();
+
+    if (!isAuthenticated) {
+        window.location.href = '/login';
+    }
 
     const style = {
         position: 'absolute' as 'absolute',
