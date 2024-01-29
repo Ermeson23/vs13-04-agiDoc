@@ -140,8 +140,9 @@ const Register = () => {
         </form>
         </section>
       </div>
-    
+      
       <Footer></Footer>
+    
     </div>
   );
 };
