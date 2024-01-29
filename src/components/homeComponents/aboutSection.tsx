@@ -5,7 +5,7 @@ export default function AboutSection(){
         <div className='custom-about'>
             <h1> QUEM SOMOS? </h1>
             <div className='isolated-text'>
-                <p>
+                <p aria-label='texto informativo sobre o agiDoc'>
                     Desafios no processo licitatório? 
                     O agiDoc surge como uma solução abrangente, 
                     focada em inovação e agilidade para transformar a gestão de contratos públicos. 
@@ -17,23 +17,23 @@ export default function AboutSection(){
             </div>
             <h2>NOSSOS VALORES</h2>
             <div className='values-container'>
-                <div className='value' id='seguranca'>
-                    <LockKey size={50} weight="fill" className='val-icon'/>
+                <div className='value' id='seguranca' aria-label='um valor do agiDoc e seu ícone correspondente'>
+                    <LockKey size={50} weight="fill" className='val-icon' aria-label='um cadeado, representando segurança'/>
                     <span> SEGURANÇA </span>
                 </div>
 
-                <div className='value' id='desempenho'>
-                    <ChartLineUp size={50} weight="fill"  className='val-icon'/>
+                <div className='value' id='desempenho' aria-label='um valor do agiDoc e seu ícone correspondente'>
+                    <ChartLineUp size={50} weight="fill"  className='val-icon' aria-label='um gráfico crescendo, representando desempenho'/>
                     <span> DESEMPENHO </span>
                 </div>
 
-                <div className='value' id='escalabilidade'>
-                    <ArrowSquareOut size={50} weight="fill"  className='val-icon'/>
+                <div className='value' id='escalabilidade' aria-label='um valor do agiDoc e seu ícone correspondente'>
+                    <ArrowSquareOut size={50} weight="fill"  className='val-icon' aria-label='uma seta para cima, representando escalabilidade'/>
                     <span> ESCALABILIDADE </span>
                 </div>
 
-                <div className='value' id='acessibilidade'>
-                    <PersonArmsSpread size={50} weight="fill"  className='val-icon'/>
+                <div className='value' id='acessibilidade' aria-label='um valor do agiDoc e seu ícone correspondente'>
+                    <PersonArmsSpread size={50} weight="fill"  className='val-icon' aria-label='uma pessoa de braços abertos, representando acessibilidade'/>
                     <span> ACESSIBILIDADE </span>
                 </div>
 
