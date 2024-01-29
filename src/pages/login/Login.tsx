@@ -85,11 +85,11 @@ const Login = () => {
             </div>
             {errors.password && <p>{errors.password.message}</p>}
             <div>
-            <button className="button-enter" type="submit">Entrar</button>
+            <button className="button-enter" type="submit" aria-label='esse botão fará o login'>Entrar</button>
             </div>
             <div className='isolated-btns'>
               <button>Esqueci minha senha</button>
-              <Link to='/register'><button>Criar nova conta</button></Link>
+              <Link to='/register'><button aria-label='redireciona para a área de cadastro caso o usuário não tenha conta'>Criar nova conta</button></Link>
             </div>
           </form>
         
