@@ -12,13 +12,13 @@ export default function OurServices() {
                     <p>Permitir a criação, edição, visualização e exclusão de contratos, renovação e controle/customização do fluxo do contrato.</p>
                     
                 </div>
-                <div className="custom-card">
+               
                 <div className="custom-card" aria-label='card detalhando uma funcionalidade do agiDoc' tabIndex={11}>
                     <h2>Controle de Versionamento</h2>
                     <p>Histórico detalhado de alterações nos contratos e licitações, incluindo o rastreamento de documentos deletados</p>
                     
                 </div>
-                <div className="custom-card" aria-label='card detalhando uma funcionalidade do agiDoc' tabIndex={12}>
+                <div className="custom-card" aria-label='card detalhando uma funcionalidade do agiDoc'>
                     <h2>Gerenciamento de Licitações</h2>
                     <p>Permitir a criação, edição, visualização e exclusão de licitações, renovação e controle/customização do fluxo da licitação.</p>
                     
@@ -30,6 +30,8 @@ export default function OurServices() {
                 </div>
             </div>
         </div>
+        
         </>
+        
     )
 }
