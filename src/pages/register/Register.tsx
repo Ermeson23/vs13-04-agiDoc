@@ -60,18 +60,18 @@ const Register = () => {
           <Header></Header>
         </section >
         <section className="main-sec-reg">
-        <h1 className='light-theme-h'>Cadastrar usuário</h1>
+        <h1 tabIndex={30} className='light-theme-h'>Cadastrar usuário</h1>
         <form className="reg-form" onSubmit={handleSubmit(onSubmit)}>
-          <h2 className='title'>Cadastro</h2>
+          <h2 tabIndex={31} className='title'>Cadastro</h2>
           <div className="form-group">
             <div className='input-label'>
               <label htmlFor="name">Nome:</label>
               <div className="icon-container">
                 <User className='login-icon' weight="fill" />
               </div>
-              <input id="name" type="text" {...register('name', { required: true })} placeholder='Digite seu nome completo' />
+              <input id="name" type="text" {...register('name', { required: true })} placeholder='Digite seu nome completo' tabIndex={32} />
             </div>
-            {errors.name && <span>Este campo é obrigatório</span>}
+            {errors.name && <span tabIndex={33}>Este campo é obrigatório</span>}
           </div>
           <div className="form-group">
             <div className='input-label'>
@@ -84,9 +84,9 @@ const Register = () => {
                   value: /^[0-9]{11}$/,
                   message: "O CPF deve ter exatamente 11 dígitos."
                 }
-              })} placeholder='Digite seu CPF' />
+              })} placeholder='Digite seu CPF' tabIndex={34} />
             </div>
-            {errors.cpf && <span>{errors.cpf.message}</span>}
+            {errors.cpf && <span tabIndex={35}>{errors.cpf.message}</span>}
           </div>
           <div className="form-group">
             <div className='input-label'>
@@ -103,9 +103,9 @@ const Register = () => {
                   value: 30,
                   message: "O e-mail não pode ter mais de 30 caracteres."
                 }
-              })} placeholder='Digite seu e-mail' />
+              })} placeholder='Digite seu e-mail' tabIndex={36} />
             </div>
-            {errors.email && <span>{ errors.email.message }</span>}
+            {errors.email && <span tabIndex={37}>{ errors.email.message }</span>}
           </div>
           <div className="form-group">
             <div className='input-label'>
@@ -122,9 +122,9 @@ const Register = () => {
                   value: 15,
                   message: "A senha não pode ter mais de 15 caracteres."
                 }
-              })} placeholder='Digite sua senha' />
+              })} placeholder='Digite sua senha' tabIndex={38} />
             </div>
-            {errors.password && <span>{ errors.password.message }</span>}
+            {errors.password && <span tabIndex={39}>{ errors.password.message }</span>}
           </div>
           <div className="form-group">
             <div className='input-label'>
@@ -132,11 +132,11 @@ const Register = () => {
               <div className="icon-container">
                 <Lock className='login-icon' weight="fill" />
               </div>
-              <input type="password" {...register('passwordConfirmation', { required: true })} placeholder='Confirme sua senha' />
+              <input type="password" {...register('passwordConfirmation', { required: true })} placeholder='Confirme sua senha' tabIndex={40} />
             </div>
-            {errors.passwordConfirmation && <span>Este campo é obrigatório</span>}
+            {errors.passwordConfirmation && <span tabIndex={41}>Este campo é obrigatório</span>}
           </div>
-          <button className="reg-button" type="submit">Criar</button>
+          <button className="reg-button" type="submit" tabIndex={42}>Criar</button>
         </form>
         </section>
       </div>

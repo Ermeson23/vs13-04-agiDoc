@@ -44,16 +44,16 @@ export default function Logged() {
                 <Header></Header>
             </section>
             <section className='easy-logged'>
-                <h1 className='light-theme-h h1-logged'>Área logada</h1>
-                <span className='greetings'>Olá, <strong className='nametxt'> { user?.name } </strong></span>
-                <h2 className='light-theme-h h2-main'> ACESSO RÁPIDO </h2>
+                <h1 tabIndex={43} className='light-theme-h h1-logged'>Área logada</h1>
+                <span tabIndex={44} className='greetings'>Olá, <strong className='nametxt'> { user?.name } </strong></span>
+                <h2 tabIndex={45}className='light-theme-h h2-main'> ACESSO RÁPIDO </h2>
                 <div className="custom-easy-acess">
 
-                    <a href="#contracts"><div className="custom-acess">
+                    <a tabIndex={46} href="#contracts"><div className="custom-acess">
                         <File size={32} weight="fill" />
                         <p>CONTRATOS</p>
                     </div></a>
-                    <a href="#analysis"><div className="custom-acess">
+                    <a tabIndex={47} href="#analysis"><div className="custom-acess">
                         <PresentationChart size={32} weight="fill" />
                         <p>ANÁLISES</p>
                     </div></a>
@@ -65,31 +65,31 @@ export default function Logged() {
                         aria-describedby="modal-modal-description"
                     >
                         <Box sx={style}>
-                            <Typography id="modal-modal-title" variant="h6" component="h2">
+                            <Typography tabIndex={48} id="modal-modal-title" variant="h6" component="h2">
                                 Olá, como podemos te ajudar?
                             </Typography>
                             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                                 <p>
                                     <ol>
                                         <li>
-                                            <strong>Perguntas Frequentes (FAQ):</strong>
-                                            <p>Encontre respostas rápidas para as perguntas mais comuns em nossa seção de Perguntas Frequentes. Se sua dúvida não estiver lá, sinta-se à vontade para entrar em contato conosco.</p>
+                                            <strong tabIndex={49}>Perguntas Frequentes (FAQ):</strong>
+                                            <p tabIndex={50}>Encontre respostas rápidas para as perguntas mais comuns em nossa seção de Perguntas Frequentes. Se sua dúvida não estiver lá, sinta-se à vontade para entrar em contato conosco.</p>
 
-                                            <strong>E-mail:</strong> <span>support@agidoc.com</span>
-                                            <p>
+                                            <strong tabIndex={51}>E-mail:</strong> <span tabIndex={52}>support@agidoc.com</span>
+                                            <p tabIndex={53}>
                                                 Nossa equipe de suporte está disponível para responder às suas perguntas de segunda a sexta, das 9h às 18h. Aguarde um retorno dentro de 24 horas úteis.
                                             </p>
                                         </li>
                                         <li>
-                                            <strong>Suporte Técnico:</strong>
-                                            <p>Caso precise de assistência mais personalizada, nossa equipe de suporte técnico está pronta para ajudar. Envie-nos uma mensagem e responderemos o mais rápido possível.</p>
+                                            <strong tabIndex={54}>Suporte Técnico:</strong>
+                                            <p tabIndex={55}>Caso precise de assistência mais personalizada, nossa equipe de suporte técnico está pronta para ajudar. Envie-nos uma mensagem e responderemos o mais rápido possível.</p>
                                         </li>
                                     </ol>
                                 </p>
                             </Typography>
                         </Box>
                     </Modal>
-                    <a href="#help" onClick={handleOpen}><div className="custom-acess">
+                    <a tabIndex={56} href="#help" onClick={handleOpen}><div className="custom-acess">
                         <Info size={32} weight="fill" />
                         <p>AJUDA</p>
                     </div></a>
@@ -101,57 +101,57 @@ export default function Logged() {
                         aria-describedby="modal-modal-description"
                     >
                         <Box sx={style}>
-                            <Typography id="modal-modal-title" variant="h6" component="h2">
+                            <Typography  tabIndex={57} id="modal-modal-title" variant="h6" component="h2">
                                 Bem-vindo às configurações da conta, como podemos te ajudar?
                             </Typography>
                             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                                 <p className="custom-links">
                                     <ol>
                                         <li>
-                                            <a href="#">Perfil do Usuário</a>
+                                            <a href="#" tabIndex={58}>Perfil do Usuário</a>
                                         </li>
                                         <li>
-                                            <a href="#">Preferências de Notificação</a>
+                                            <a href="#" tabIndex={59}>Preferências de Notificação</a>
                                         </li>
                                         <li>
-                                            <a href="#">Configurações de Privacidade</a>
+                                            <a href="#" tabIndex={60}>Configurações de Privacidade</a>
                                         </li>
                                         <li>
-                                            <a href="#">Idioma e Região</a>
+                                            <a href="#" tabIndex={61}>Idioma e Região</a>
                                         </li>
                                         <li>
-                                            <a href="#">Histórico de Atividades</a>
+                                            <a href="#" tabIndex={62}>Histórico de Atividades</a>
                                         </li>
                                     </ol>
                                 </p>
                             </Typography>
                         </Box>
                     </Modal>
-                    <a href="#account-settings" onClick={handleOpenSettings}><div className="custom-acess">
+                    <a tabIndex={63} href="#account-settings" onClick={handleOpenSettings}><div className="custom-acess">
                         <Info size={32} weight="fill" />
                         <p>CONFIGURAÇÕES DA CONTA</p>
                     </div></a>
                 </div>
             </section>
             <section className='logged-dark-section'>
-                <h1 className="h1-dark-logged">Menu</h1>
+                <h2 tabIndex={64} className="h1-dark-logged">Menu</h2>
                 <div className='divide-section'>
-                    <h2 className="h2-dark-logged">CONTRATOS</h2>
+                    <h2 tabIndex={65} className="h2-dark-logged">CONTRATOS</h2>
                     <div className='menu-cards-div' id="contracts">
 
-                        <a href="#new-contract">
+                        <a tabIndex={66} href="#new-contract">
                             <div className='custom-card-menu'>
                                 <FilePlus className='icon-card-menu' size={24} weight="fill" />
                                 <p>NOVO CONTRATO</p>
                             </div>
                         </a>
-                        <a href="#contract-assign">
+                        <a tabIndex={67} href="#contract-assign">
                             <div className='custom-card-menu'>
                                 <PenNib className='icon-card-menu' size={24} weight="fill" />
                                 <p> assinar contrato</p>
                             </div>
                         </a>
-                        <a href="#consult-contract">
+                        <a tabIndex={68} href="#consult-contract">
                             <div className='custom-card-menu'>
                                 <FileSearch className='icon-card-menu' size={24} weight="fill" />
                                 <p> consultar contratos</p>
@@ -162,21 +162,21 @@ export default function Logged() {
 
                 </div>
                 <div className='divide-section' id="analysis">
-                    <h2 className="h2-dark-logged">ANÁLISES</h2>
+                    <h2 tabIndex={69} className="h2-dark-logged">ANÁLISES</h2>
                     <div className='menu-cards-div'>
-                        <a href="#new-analyze">
+                        <a tabIndex={70} href="#new-analyze">
                             <div className='custom-card-menu'>
                                 <PlusCircle className='icon-card-menu' size={24} weight="fill" />
                                 <p> NOVA ANÁLISE</p>
                             </div>
                         </a>
-                        <a href="#insight">
+                        <a tabIndex={71} href="#insight">
                             <div className='custom-card-menu'>
                                 <ListMagnifyingGlass className='icon-card-menu' size={24} weight="fill" />
                                 <p> INSIGHTS</p>
                             </div>
                         </a>
-                        <a href="#consult-analyze">
+                        <a tabIndex={72} href="#consult-analyze">
                             <div className='custom-card-menu'>
                                 <FileSearch className='icon-card-menu' size={24} weight="fill" />
                                 <p> consultar análises</p>

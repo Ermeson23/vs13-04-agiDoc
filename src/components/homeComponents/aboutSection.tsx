@@ -3,8 +3,8 @@ import { LockKey, ChartLineUp, ArrowSquareOut, PersonArmsSpread} from '@phosphor
 export default function AboutSection(){
     return(
         <div className='custom-about'>
-            <h1> QUEM SOMOS? </h1>
-            <div className='isolated-text'>
+            <h2 tabIndex={14}> QUEM SOMOS? </h2>
+            <div className='isolated-text' tabIndex={15}>
                 <p aria-label='texto informativo sobre o agiDoc'>
                     Desafios no processo licitatório? 
                     O agiDoc surge como uma solução abrangente, 
@@ -15,26 +15,26 @@ export default function AboutSection(){
                     proporcionando uma gestão de contratos mais eficiente e ágil. 
                 </p>
             </div>
-            <h2>NOSSOS VALORES</h2>
+            <h2 tabIndex={16}>NOSSOS VALORES</h2>
             <div className='values-container'>
                 <div className='value' id='seguranca' aria-label='um valor do agiDoc e seu ícone correspondente'>
                     <LockKey size={50} weight="fill" className='val-icon' aria-label='um cadeado, representando segurança'/>
-                    <span> SEGURANÇA </span>
+                    <span tabIndex={17}> SEGURANÇA </span>
                 </div>
 
                 <div className='value' id='desempenho' aria-label='um valor do agiDoc e seu ícone correspondente'>
                     <ChartLineUp size={50} weight="fill"  className='val-icon' aria-label='um gráfico crescendo, representando desempenho'/>
-                    <span> DESEMPENHO </span>
+                    <span tabIndex={18}> DESEMPENHO </span>
                 </div>
 
                 <div className='value' id='escalabilidade' aria-label='um valor do agiDoc e seu ícone correspondente'>
                     <ArrowSquareOut size={50} weight="fill"  className='val-icon' aria-label='uma seta para cima, representando escalabilidade'/>
-                    <span> ESCALABILIDADE </span>
+                    <span tabIndex={19}> ESCALABILIDADE </span>
                 </div>
 
                 <div className='value' id='acessibilidade' aria-label='um valor do agiDoc e seu ícone correspondente'>
                     <PersonArmsSpread size={50} weight="fill"  className='val-icon' aria-label='uma pessoa de braços abertos, representando acessibilidade'/>
-                    <span> ACESSIBILIDADE </span>
+                    <span tabIndex={20}> ACESSIBILIDADE </span>
                 </div>
 
             </div>

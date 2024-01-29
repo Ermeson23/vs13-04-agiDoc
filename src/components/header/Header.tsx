@@ -27,7 +27,7 @@ const Header: React.FC<HeaderProps> = () => {
       <AppBar className="custom-header" position='fixed'>
         <Toolbar className='header-container'>
           <Link className='link-menu' to='/'>{
-            <img src={logo} alt="logo da agidoc com relógio representando agilidade. a palavra agi está em cor azul e doc está em verde" className='logo-agidoc' loading='lazy'/>}
+            <img tabIndex={1} src={logo} alt="logo da agidoc com relógio representando agilidade. a palavra agi está em cor azul e doc está em verde" className='logo-agidoc' loading='lazy'/>}
           </Link>
           <IconButton className='custom-icon'
             size="large"
@@ -40,13 +40,13 @@ const Header: React.FC<HeaderProps> = () => {
           </IconButton>
           <ul className="desktop-links">
             <li>
-              <Link to="/" className='link-nav' aria-label='ir para a landing page'>Home</Link>
+              <Link to="/" className='link-nav' aria-label='ir para a landing page' tabIndex={2}>Home</Link>
             </li>
             <li>
-              <Link to="/login" className='link-nav'  aria-label='ir para a página de login'>Login</Link>
+              <Link to="/login" className='link-nav'  aria-label='ir para a página de login' tabIndex={3}>Login</Link>
             </li>
             <li>
-              <Link to="/register" className='link-nav' aria-label='ir para a página de cadastro'>Cadastro</Link>
+              <Link to="/register" className='link-nav' aria-label='ir para a página de cadastro' tabIndex={4}>Cadastro</Link>
             </li>
           </ul>
           <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
