@@ -13,6 +13,22 @@
       "cpf": "03462745205",
       "email": "ermeson@gmail.com",
       "password": "1234567"
+    },
+    {
+      "id": "e802",
+      "name": "Wesley",
+      "cpf": "23353470892",
+      "email": "wesley@gmail.com",
+      "password": "123456",
+      "passwordConfirmation": "123456"
+    },
+    {
+      "id": "feb2",
+      "name": "Daniel",
+      "cpf": "23353470892",
+      "email": "daniel@gmail.com",
+      "password": "123456",
+      "passwordConfirmation": "123456"
     }
   ]
 }
