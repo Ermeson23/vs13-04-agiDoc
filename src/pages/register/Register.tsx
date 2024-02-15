@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import { registerUser, UserRegistrationData } from '../../store/register/registerSlice';
 import { User, LockKey, IdentificationCard, Envelope, Lock } from '@phosphor-icons/react';
 import Footer from '../../components/footer/Footer';
+import "./Register.css";
 
 interface RegisterForm extends UserRegistrationData {
   passwordConfirmation: string;
@@ -23,7 +24,6 @@ const Register: React.FC = () => {
       }
 
       dispatch(registerUser(data) as any);
-      //  adicionar redirecionamento após o cadastro ser bem-sucedido
       
     } catch (error) {
       alert('Usuário não cadastrado');
