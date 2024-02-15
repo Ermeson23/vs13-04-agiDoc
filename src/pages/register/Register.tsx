@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import { registerUser, UserRegistrationData } from '../../store/register/registerSlice';
 import { User, LockKey, IdentificationCard, Envelope, Lock } from '@phosphor-icons/react';
 import Footer from '../../components/footer/Footer';
+import Header from '../../components/header/Header';
 import "./Register.css";
 
 interface RegisterForm extends UserRegistrationData {
@@ -32,6 +33,7 @@ const Register: React.FC = () => {
 
   return (
     <div className='page-render'>
+     <Header></Header>
       <div className="register-container">
         <section className="main-sec-reg">
           <h1 tabIndex={30} className='light-theme-h'>Cadastrar usuário</h1>

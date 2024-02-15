@@ -1,15 +1,16 @@
+import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { loginUser } from '../../store/login/loginSlice';
+import { RootState } from '../../store/rootReducer';
 import { useForm } from 'react-hook-form';
 import { useNavigate, Link } from 'react-router-dom';
-import axios from 'axios';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import Footer from '../../components/footer/Footer';
-import '../../App.css'
+import '../../App.css';
 import Header from '../../components/header/Header';
 import './Login.css';
 import { User, LockKey } from '@phosphor-icons/react';
-import { useContext } from 'react';
-import UserContext from '../context/UserContext';
 
 interface Form {
   userName: string;
@@ -22,28 +23,22 @@ const schema = yup.object().shape({
 });
 
 const Login = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { register, handleSubmit, formState: { errors } } = useForm<Form>({
     resolver: yupResolver(schema),
   });
-
-  const navigate = useNavigate();
-  const { getUser, onLogin } = useContext(UserContext);
+  const [loading, setLoading] = useState(false);
+  const loginError = useSelector((state: RootState) => state.login.error);
 
   const onSubmit = async (data: Form) => {
+    setLoading(true);
     try {
-      axios.get(`http://localhost:3001/users?email=${data.userName}&password=${data.password}`)
-        .then((response) => {
-          if (response.data.length > 0) {
-            const loggedUserId = response.data[0].id;
-            onLogin(loggedUserId);
-            alert(`Login com sucesso: ${response.data[0].name}`);
-            navigate('/logged');
-            getUser(loggedUserId);
-          } else {
-            console.error('Credenciais inválidas');
-          }
-        });
+      dispatch(loginUser(data as any) as any);
+      setLoading(false);
+      navigate('/logged');
     } catch (error) {
+      setLoading(false);
       console.error('Login falhou:', error);
     }
   };
@@ -93,14 +88,11 @@ const Login = () => {
               <Link tabIndex={29} to='/register'><button aria-label='redireciona para a área de cadastro caso o usuário não tenha conta'>Criar nova conta</button></Link>
             </div>
           </form>
-         
-      
       </div>
       </section>
       </div>
       <Footer></Footer>
     </div>
-
   );
 };
 
